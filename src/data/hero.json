@@ -6,7 +6,7 @@
   "ctaText": "Ver Proyectos",
   "ctaLink": "#proyectos",
   "secondaryCtaText": "Descargar CV",
-  "secondaryCtaLink": "#contacto",
+  "secondaryCtaLink": "./Juan Manuel Zafra Hernández.pdf",
   "socialLinks": {
     "github": "https://github.com/juanmazh",
     "linkedin": "https://www.linkedin.com/in/juan-manuel-zafra-hern%C3%A1ndez-5b2bb7339/",
