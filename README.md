@@ -32,7 +32,7 @@ src/
 
 1. **Clona el repositorio:**
    ```bash
-   git clone https://github.com/juanmanuelzafra/Porfolio.git
+   git clone https://github.com/juanmazh/Porfolio.git
    cd Porfolio
    ```
 
@@ -55,13 +55,13 @@ src/
 
 El portfolio se despliega automáticamente en GitHub Pages cada vez que se hace push a la rama `main`.
 
-**URL del portfolio:** https://juanmanuelzafra.github.io/Porfolio
+**URL del portfolio:** https://juanmazh.github.io/Porfolio
 
 ## 📧 Contacto
 
 - **Email:** juanmanuel.zafra@gmail.com
 - **LinkedIn:** [Juan Manuel Zafra Hernández](https://www.linkedin.com/in/juan-manuel-zafra-hernández-8b8b8b8b8/)
-- **GitHub:** [@juanmanuelzafra](https://github.com/juanmanuelzafra)
+- **GitHub:** [@juanmazh](https://github.com/juanmazh)
 
 ---
 
