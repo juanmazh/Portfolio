@@ -1,0 +1,58 @@
+{
+  "technical": [
+    {
+      "name": "Frontend",
+      "skills": [
+        { "name": "HTML5", "level": 90 },
+        { "name": "CSS3", "level": 85 },
+        { "name": "JavaScript", "level": 88 },
+        { "name": "React", "level": 75 },
+        { "name": "Vue.js", "level": 80 },
+        { "name": "Bootstrap", "level": 85 }
+      ]
+    },
+    {
+      "name": "Backend",
+      "skills": [
+        { "name": "PHP", "level": 85 },
+        { "name": "Node.js", "level": 70 },
+        { "name": "Python", "level": 65 },
+        { "name": "Java", "level": 60 },
+        { "name": "Laravel", "level": 70 }
+      ]
+    },
+    {
+      "name": "Base de Datos",
+      "skills": [
+        { "name": "MySQL", "level": 85 },
+        { "name": "SQL", "level": 80 }
+      ]
+    },
+    {
+      "name": "Herramientas & DevOps",
+      "skills": [
+        { "name": "Git", "level": 85 },
+        { "name": "Docker", "level": 70 },
+        { "name": "GitHub", "level": 90 }
+      ]
+    }
+  ],
+  "soft": [
+    {
+      "name": "Trabajo en Equipo",
+      "description": "Experiencia colaborando en proyectos académicos y profesionales, demostrando capacidad de trabajo en equipo."
+    },
+    {
+      "name": "Resolución de Problemas",
+      "description": "Habilidad para analizar problemas complejos y encontrar soluciones eficientes en desarrollo web."
+    },
+    {
+      "name": "Aprendizaje Continuo",
+      "description": "Comprometido con mantenerme actualizado en las últimas tecnologías, especialmente en ciberseguridad."
+    },
+    {
+      "name": "Gestión de Proyectos",
+      "description": "Capacidad para manejar múltiples proyectos académicos y cumplir con los plazos establecidos."
+    }
+  ]
+}

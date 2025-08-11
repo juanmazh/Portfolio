@@ -1,0 +1,37 @@
+{
+  "work": [
+    {
+      "title": "Desarrollador de Aplicaciones Web",
+      "company": "Cinde Soluciones S.L",
+      "period": "Actualidad",
+      "location": "Jaén, España",
+      "description": "Desarrollo de aplicaciones web utilizando tecnologías modernas. Trabajo en proyectos empresariales aplicando conocimientos en JavaScript, PHP, y frameworks frontend.",
+      "technologies": ["JavaScript", "PHP", "React", "Vue.js", "MySQL"]
+    }
+  ],
+  "education": [
+    {
+      "title": "Técnico Superior en Desarrollo de Aplicaciones Web",
+      "institution": "Centro de Formación Profesional",
+      "period": "2023 - 2025",
+      "location": "Jaén, España",
+      "description": "Formación completa en desarrollo web incluyendo módulos de cliente, servidor, interfaces, y bases de datos.",
+      "achievements": [
+        "Proyecto fin de grado: AmigosJaén - Red social para promocionar Jaén",
+        "Especialización en tecnologías frontend y backend",
+        "Conocimientos en PHP, JavaScript, Vue.js, MySQL"
+      ]
+    },
+    {
+      "title": "Futuro Experto en Ciberseguridad",
+      "institution": "En proceso de formación",
+      "period": "2025 - En curso",
+      "location": "España",
+      "description": "Formación especializada en ciberseguridad para complementar conocimientos en desarrollo web.",
+      "achievements": [
+        "En proceso de certificación",
+        "Complementando formación en desarrollo web"
+      ]
+    }
+  ]
+}

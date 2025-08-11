@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Projects from '../components/Projects.astro';
+import Skills from '../components/Skills.astro';
+import Experience from '../components/Experience.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+
+// Importar datos centralizados
+import personalInfo from '../data/personal-info.json';
+---
+
+<Layout title="Portfolio - Juan Manuel">
+	<Navigation />
+	<Hero />
+	<About />
+	<Projects />
+	<Skills />
+	<Experience />
+	<Contact />
+	<Footer />
+</Layout>

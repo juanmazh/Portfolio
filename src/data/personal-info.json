@@ -1,0 +1,143 @@
+{
+  "hero": {
+    "name": "Juan Manuel",
+    "title": "Desarrollador Web Full Stack",
+    "subtitle": "Creando experiencias digitales únicas y funcionales",
+    "description": "Soy un desarrollador web apasionado por crear soluciones digitales innovadoras. Me especializo en desarrollo frontend y backend, siempre buscando la excelencia en cada proyecto.",
+    "ctaText": "Ver Proyectos",
+    "ctaLink": "#proyectos",
+    "secondaryCtaText": "Descargar CV",
+    "secondaryCtaLink": "#contacto",
+    "socialLinks": {
+      "github": "https://github.com/tu-usuario",
+      "linkedin": "https://linkedin.com/in/tu-usuario",
+      "email": "mailto:tu@email.com"
+    }
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "subtitle": "Conoce más sobre mi trayectoria y pasión por el desarrollo",
+    "description": "Soy un desarrollador web apasionado por crear soluciones digitales que marquen la diferencia. Mi enfoque se centra en la experiencia del usuario y la calidad del código, siempre buscando las mejores prácticas y tecnologías emergentes.",
+    "personalInfo": [
+      { "label": "Nombre", "value": "Juan Manuel Pérez" },
+      { "label": "Edad", "value": "25 años" },
+      { "label": "Ubicación", "value": "Madrid, España" },
+      { "label": "Disponibilidad", "value": "Disponible para proyectos" },
+      { "label": "Experiencia", "value": "2+ años" },
+      { "label": "Idiomas", "value": "Español, Inglés" }
+    ],
+    "interests": [
+      "Desarrollo Web",
+      "React",
+      "Node.js",
+      "Base de Datos",
+      "APIs",
+      "DevOps"
+    ]
+  },
+  "projects": [
+    {
+      "title": "E-commerce Platform",
+      "description": "Plataforma completa de comercio electrónico con carrito de compras, sistema de pagos y panel de administración.",
+      "image": "/project1.jpg",
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+      "github": "https://github.com/tu-usuario/proyecto1",
+      "demo": "https://demo-proyecto1.com",
+      "category": "Full Stack"
+    },
+    {
+      "title": "Task Management App",
+      "description": "Aplicación web para gestión de tareas con drag & drop, notificaciones y colaboración en tiempo real.",
+      "image": "/project2.jpg",
+      "technologies": ["Vue.js", "Firebase", "Tailwind CSS"],
+      "github": "https://github.com/tu-usuario/proyecto2",
+      "demo": "https://demo-proyecto2.com",
+      "category": "Frontend"
+    }
+  ],
+  "skills": {
+    "technical": [
+      {
+        "name": "Frontend",
+        "skills": [
+          { "name": "HTML5", "level": 90 },
+          { "name": "CSS3", "level": 85 },
+          { "name": "JavaScript", "level": 88 },
+          { "name": "React", "level": 82 },
+          { "name": "Vue.js", "level": 75 },
+          { "name": "TypeScript", "level": 80 }
+        ]
+      },
+      {
+        "name": "Backend",
+        "skills": [
+          { "name": "Node.js", "level": 85 },
+          { "name": "Express.js", "level": 80 },
+          { "name": "Python", "level": 75 },
+          { "name": "PHP", "level": 70 }
+        ]
+      }
+    ],
+    "soft": [
+      {
+        "name": "Comunicación",
+        "description": "Excelente capacidad para comunicar ideas técnicas de manera clara y efectiva."
+      },
+      {
+        "name": "Trabajo en Equipo",
+        "description": "Experiencia colaborando en equipos multidisciplinarios y proyectos ágiles."
+      }
+    ]
+  },
+  "experience": {
+    "work": [
+      {
+        "title": "Desarrollador Web Full Stack",
+        "company": "Tech Solutions Inc.",
+        "period": "2023 - Presente",
+        "location": "Madrid, España",
+        "description": "Desarrollo de aplicaciones web completas utilizando React, Node.js y MongoDB.",
+        "technologies": ["React", "Node.js", "MongoDB", "AWS", "Docker"]
+      }
+    ],
+    "education": [
+      {
+        "title": "Ingeniería Informática",
+        "institution": "Universidad Politécnica de Madrid",
+        "period": "2017 - 2021",
+        "location": "Madrid, España",
+        "description": "Grado en Ingeniería Informática con especialización en desarrollo de software.",
+        "achievements": ["Promedio: 8.5/10", "Proyecto final: Plataforma de e-learning"]
+      }
+    ]
+  },
+  "contact": {
+    "info": [
+      {
+        "title": "Email",
+        "value": "tu@email.com",
+        "link": "mailto:tu@email.com"
+      },
+      {
+        "title": "Teléfono",
+        "value": "+34 600 000 000",
+        "link": "tel:+34600000000"
+      },
+      {
+        "title": "Ubicación",
+        "value": "Madrid, España",
+        "link": "#"
+      }
+    ],
+    "social": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/tu-usuario"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://linkedin.com/in/tu-usuario"
+      }
+    ]
+  }
+}

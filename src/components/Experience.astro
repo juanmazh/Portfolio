@@ -1,0 +1,142 @@
+---
+import experienceData from '../data/experience.json';
+---
+
+<section id="experiencia" class="section-padding bg-gray-50">
+	<div class="container-custom">
+		<div class="text-center mb-16">
+			<h2 class="text-4xl font-bold text-gray-900 mb-4">Experiencia</h2>
+			<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+				Mi trayectoria profesional y académica que me ha llevado a convertirme en el desarrollador que soy hoy.
+			</p>
+		</div>
+
+		<div class="grid lg:grid-cols-2 gap-16">
+			<!-- Experiencia Laboral -->
+			<div class="space-y-8">
+				<h3 class="text-2xl font-semibold text-gray-900 mb-6">Experiencia Laboral</h3>
+				
+				<div class="space-y-8">
+					{experienceData.work.map((exp, index) => (
+						<div class="relative">
+							{/* Línea de tiempo */}
+							<div class="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-300"></div>
+							
+							<div class="relative flex items-start space-x-6">
+								{/* Punto de tiempo */}
+								<div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+									<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2V6"/>
+									</svg>
+								</div>
+								
+								<div class="flex-1 min-w-0">
+									<div class="card p-6">
+										<div class="flex items-center justify-between mb-4">
+											<h4 class="text-lg font-semibold text-gray-900">{exp.title}</h4>
+											<span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full font-medium">
+												{exp.period}
+											</span>
+										</div>
+										
+										<div class="space-y-3">
+											<div class="flex items-center space-x-2 text-gray-600">
+												<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+													<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+												</svg>
+												<span class="font-medium">{exp.company}</span>
+											</div>
+											
+											<div class="flex items-center space-x-2 text-gray-600">
+												<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+													<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+												</svg>
+												<span>{exp.location}</span>
+											</div>
+											
+											<p class="text-gray-700 leading-relaxed">{exp.description}</p>
+											
+											{exp.technologies && (
+												<div class="flex flex-wrap gap-2">
+													{exp.technologies.map((tech) => (
+														<span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">
+															{tech}
+														</span>
+													))}
+												</div>
+											)}
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					))}
+				</div>
+			</div>
+
+			<!-- Educación -->
+			<div class="space-y-8">
+				<h3 class="text-2xl font-semibold text-gray-900 mb-6">Educación</h3>
+				
+				<div class="space-y-8">
+					{experienceData.education.map((edu, index) => (
+						<div class="relative">
+							{/* Línea de tiempo */}
+							<div class="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-300"></div>
+							
+							<div class="relative flex items-start space-x-6">
+								{/* Punto de tiempo */}
+								<div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-green-500 to-blue-600 rounded-full flex items-center justify-center">
+									<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/>
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+									</svg>
+								</div>
+								
+								<div class="flex-1 min-w-0">
+									<div class="card p-6">
+										<div class="flex items-center justify-between mb-4">
+											<h4 class="text-lg font-semibold text-gray-900">{edu.title}</h4>
+											<span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full font-medium">
+												{edu.period}
+											</span>
+										</div>
+										
+										<div class="space-y-3">
+											<div class="flex items-center space-x-2 text-gray-600">
+												<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+													<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+												</svg>
+												<span class="font-medium">{edu.institution}</span>
+											</div>
+											
+											<div class="flex items-center space-x-2 text-gray-600">
+												<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+													<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+												</svg>
+												<span>{edu.location}</span>
+											</div>
+											
+											<p class="text-gray-700 leading-relaxed">{edu.description}</p>
+											
+											{edu.achievements && (
+												<div class="space-y-2">
+													<h5 class="text-sm font-semibold text-gray-900">Logros:</h5>
+													<ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+														{edu.achievements.map((achievement) => (
+															<li>{achievement}</li>
+														))}
+													</ul>
+												</div>
+											)}
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					))}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

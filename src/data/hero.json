@@ -1,0 +1,15 @@
+{
+  "name": "Juan Manuel Zafra Hernández",
+  "title": "Desarrollador de Aplicaciones Web",
+  "subtitle": "Técnico superior en Desarrollo de Aplicaciones Web. Futuro Experto en Ciberseguridad",
+  "description": "Soy un desarrollador web apasionado por crear soluciones digitales innovadoras. Actualmente trabajo en Cinde Soluciones S.L y me especializo en desarrollo frontend y backend, siempre buscando la excelencia en cada proyecto.",
+  "ctaText": "Ver Proyectos",
+  "ctaLink": "#proyectos",
+  "secondaryCtaText": "Descargar CV",
+  "secondaryCtaLink": "#contacto",
+  "socialLinks": {
+    "github": "https://github.com/juanmazh",
+    "linkedin": "https://www.linkedin.com/in/juan-manuel-zafra-hern%C3%A1ndez-5b2bb7339/",
+    "email": "mailto:juanmazh.dev@gmail.com"
+  }
+}

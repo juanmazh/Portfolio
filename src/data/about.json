@@ -1,0 +1,23 @@
+{
+  "title": "Sobre Mí",
+  "subtitle": "Conoce más sobre mi trayectoria y pasión por el desarrollo web",
+  "description": "Soy un desarrollador web apasionado por crear soluciones digitales que marquen la diferencia. Mi enfoque se centra en la experiencia del usuario y la calidad del código, siempre buscando las mejores prácticas y tecnologías emergentes. Actualmente trabajo en Cinde Soluciones S.L y estoy en camino de convertirme en Experto en Ciberseguridad.",
+  "personalInfo": [
+    { "label": "Nombre", "value": "Juan Manuel Zafra Hernández" },
+    { "label": "Ubicación", "value": "Jaén, España" },
+    { "label": "Empresa", "value": "Cinde Soluciones S.L" },
+    { "label": "Formación", "value": "Técnico superior en DAW" },
+    { "label": "Especialización", "value": "Futuro Experto en Ciberseguridad" },
+    { "label": "Disponibilidad", "value": "Empleado en Cinde Soluciones S.L" }
+  ],
+  "interests": [
+    "Desarrollo Web",
+    "Ciberseguridad",
+    "JavaScript",
+    "React",
+    "Vue.js",
+    "PHP",
+    "Python",
+    "Docker"
+  ]
+}

@@ -1,0 +1,71 @@
+---
+import aboutData from '../data/about.json';
+---
+
+<section id="sobre-mi" class="section-padding bg-white">
+	<div class="container-custom">
+		<div class="text-center mb-16">
+			<h2 class="text-4xl font-bold text-gray-900 mb-4">{aboutData.title}</h2>
+			<p class="text-xl text-gray-600 max-w-3xl mx-auto">{aboutData.subtitle}</p>
+		</div>
+
+		<div class="grid lg:grid-cols-2 gap-12 items-center">
+			<!-- Contenido -->
+			<div class="space-y-8">
+				<div class="space-y-6">
+					<h3 class="text-2xl font-semibold text-gray-900">Mi Historia</h3>
+					<p class="text-lg text-gray-700 leading-relaxed">
+						{aboutData.description}
+					</p>
+					<p class="text-lg text-gray-700 leading-relaxed">
+						Me apasiona aprender nuevas tecnologías y enfrentar desafíos que me permitan crecer profesionalmente. 
+						Creo en la importancia de escribir código limpio, mantenible y escalable, siempre pensando en el usuario final.
+					</p>
+				</div>
+
+				<!-- Información personal -->
+				<div class="space-y-4">
+					<h3 class="text-2xl font-semibold text-gray-900">Información Personal</h3>
+					<div class="grid sm:grid-cols-2 gap-4">
+						{aboutData.personalInfo.map((info) => (
+							<div class="flex justify-between items-center py-2 border-b border-gray-200">
+								<span class="font-bold text-gray-700">{info.label}:</span>
+								<span class="text-gray-900">{info.value}</span>
+							</div>
+						))}
+					</div>
+				</div>
+
+				<!-- Intereses -->
+				<div class="space-y-4">
+					<h3 class="text-2xl font-semibold text-gray-900">Intereses</h3>
+					<div class="flex flex-wrap gap-3">
+						{aboutData.interests.map((interest) => (
+							<span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+								{interest}
+							</span>
+						))}
+					</div>
+				</div>
+			</div>
+
+			<!-- Imagen/Ilustración -->
+			<div class="flex justify-center">
+				<div class="relative">
+					<div class="w-96 h-96 bg-gradient-to-br from-green-400 to-blue-500 rounded-2xl flex items-center justify-center shadow-2xl transform rotate-3 overflow-hidden">
+						<div class="w-80 h-80 bg-white rounded-2xl flex items-center justify-center transform -rotate-3 overflow-hidden">
+							<img 
+								src="/foto.JPG" 
+								alt="Juan Manuel Zafra Hernández" 
+								class="w-full h-full object-cover rounded-2xl"
+							/>
+						</div>
+					</div>
+					<!-- Elementos decorativos -->
+					<div class="absolute -top-6 -right-6 w-12 h-12 bg-yellow-400 rounded-full animate-bounce"></div>
+					<div class="absolute -bottom-6 -left-6 w-8 h-8 bg-pink-400 rounded-full animate-pulse"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

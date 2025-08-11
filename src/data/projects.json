@@ -1,0 +1,57 @@
+[
+  {
+    "title": "AmigosJaén",
+    "description": "Mi primer proyecto 'profesional' - proyecto fin de grado superior en desarrollo de aplicaciones web. Una red social para promocionar la actividad de la provincia de Jaén, con numerosas funcionalidades.",
+    "image": "/project-amigosjaen.jpg",
+    "technologies": ["JavaScript", "HTML5", "CSS3"],
+    "github": "https://github.com/juanmazh/amigosjaen",
+    "demo": "#",
+    "category": "Full Stack",
+    "featured": true
+  },
+  {
+    "title": "ApatitaTours",
+    "description": "Proyecto del módulo Cliente - página web para gestionar y contratar tours turísticos con funcionalidades de reserva y consulta.",
+    "image": "/project-apatitatours.jpg",
+    "technologies": ["Vue.js", "JavaScript", "CSS3"],
+    "github": "https://github.com/juanmazh/ApatitaTours",
+    "demo": "#",
+    "category": "Frontend"
+  },
+  {
+    "title": "Books-CRUD",
+    "description": "Sistema CRUD completo para gestión de libros con funcionalidad adicional de generación de PDF.",
+    "image": "/project-books-crud.jpg",
+    "technologies": ["PHP", "MySQL", "HTML5", "CSS3"],
+    "github": "https://github.com/juanmazh/Books-CRUD",
+    "demo": "#",
+    "category": "Backend"
+  },
+  {
+    "title": "Sistema Gestor de Inventarios",
+    "description": "Sistema completo de gestión de inventarios desarrollado con PHP, MySQL y Bootstrap para una interfaz moderna y responsive.",
+    "image": "/project-inventarios.jpg",
+    "technologies": ["PHP", "MySQL", "Bootstrap", "JavaScript"],
+    "github": "https://github.com/juanmazh/SistemaGestorDeInventarios",
+    "demo": "#",
+    "category": "Full Stack"
+  },
+  {
+    "title": "RPS Game",
+    "description": "Juego de piedra, papel o tijeras desarrollado para el módulo de servidor, demostrando conocimientos en PHP.",
+    "image": "/project-rps.jpg",
+    "technologies": ["PHP", "HTML5", "CSS3"],
+    "github": "https://github.com/juanmazh/RPS_JuanManuel_Daw",
+    "demo": "#",
+    "category": "Backend"
+  },
+  {
+    "title": "Proyecto Cliente Interfaces",
+    "description": "Proyecto del módulo de interfaces de cliente, desarrollado con JavaScript y tecnologías frontend.",
+    "image": "/project-interfaces.jpg",
+    "technologies": ["JavaScript", "HTML5", "CSS3"],
+    "github": "https://github.com/juanmazh/ProyectoClienteInterfaces",
+    "demo": "#",
+    "category": "Frontend"
+  }
+]
