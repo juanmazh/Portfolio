@@ -8,6 +8,6 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://juanmazh.github.io',
-  base: '/Porfolio',
+  base: '/Portfolio',
   integrations: [mdx(), sitemap(), tailwind()],
 });

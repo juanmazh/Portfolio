@@ -32,8 +32,8 @@ src/
 
 1. **Clona el repositorio:**
    ```bash
-   git clone https://github.com/juanmazh/Porfolio.git
-   cd Porfolio
+   git clone https://github.com/juanmazh/Portfolio.git
+   cd Portfolio
    ```
 
 2. **Instala las dependencias:**
@@ -55,7 +55,7 @@ src/
 
 El portfolio se despliega automáticamente en GitHub Pages cada vez que se hace push a la rama `main`.
 
-**URL del portfolio:** https://juanmazh.github.io/Porfolio
+**URL del portfolio:** https://juanmazh.github.io/Portfolio
 
 ## 📧 Contacto
 
