@@ -19,20 +19,16 @@ import skillsData from '../data/skills.json';
 				{skillsData.technical.map((category) => (
 					<div class="space-y-4">
 						<h4 class="text-lg font-medium text-gray-800">{category.name}</h4>
-						<div class="space-y-4">
+						<div class="flex flex-wrap gap-2">
 							{category.skills.map((skill) => (
-								<div class="space-y-2">
-									<div class="flex justify-between items-center">
-										<span class="text-gray-700 font-medium">{skill.name}</span>
-										<span class="text-sm text-gray-500">{skill.level}%</span>
-									</div>
-									<div class="w-full bg-gray-200 rounded-full h-2">
-										<div 
-											class="bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full transition-all duration-1000 ease-out"
-											style={`width: ${skill.level}%`}
-										></div>
-									</div>
-								</div>
+								<a
+									href={skill.url}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="inline-block px-4 py-2 rounded-full bg-blue-50 text-blue-700 font-medium border border-blue-200 hover:bg-blue-100 hover:text-blue-900 transition-colors duration-200 shadow-sm"
+								>
+									{skill.name}
+								</a>
 							))}
 						</div>
 					</div>
@@ -55,34 +51,3 @@ import skillsData from '../data/skills.json';
 		</div>
 	</div>
 </section>
-
-<script>
-	// Animación de barras de progreso
-	const observerOptions = {
-		threshold: 0.5,
-		rootMargin: '0px 0px -100px 0px'
-	};
-
-	const observer = new IntersectionObserver((entries) => {
-		entries.forEach(entry => {
-			if (entry.isIntersecting) {
-				const progressBars = entry.target.querySelectorAll('.bg-gradient-to-r');
-				progressBars.forEach(bar => {
-					const htmlBar = bar as HTMLElement;
-					const width = htmlBar.style.width;
-					htmlBar.style.width = '0%';
-					setTimeout(() => {
-						htmlBar.style.width = width;
-					}, 100);
-				});
-				observer.unobserve(entry.target);
-			}
-		});
-	}, observerOptions);
-
-	// Observar la sección de habilidades
-	const skillsSection = document.getElementById('habilidades');
-	if (skillsSection) {
-		observer.observe(skillsSection);
-	}
-</script>

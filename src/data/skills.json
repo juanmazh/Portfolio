@@ -3,37 +3,37 @@
     {
       "name": "Frontend",
       "skills": [
-        { "name": "HTML5", "level": 90 },
-        { "name": "CSS3", "level": 85 },
-        { "name": "JavaScript", "level": 88 },
-        { "name": "React", "level": 75 },
-        { "name": "Vue.js", "level": 80 },
-        { "name": "Bootstrap", "level": 85 }
+        { "name": "HTML5", "url": "https://developer.mozilla.org/docs/Web/HTML" },
+        { "name": "CSS3", "url": "https://developer.mozilla.org/docs/Web/CSS" },
+        { "name": "JavaScript", "url": "https://developer.mozilla.org/docs/Web/JavaScript" },
+        { "name": "React", "url": "https://react.dev/" },
+        { "name": "Vue.js", "url": "https://vuejs.org/" },
+        { "name": "Bootstrap", "url": "https://getbootstrap.com/" }
       ]
     },
     {
       "name": "Backend",
       "skills": [
-        { "name": "PHP", "level": 85 },
-        { "name": "Node.js", "level": 70 },
-        { "name": "Python", "level": 65 },
-        { "name": "Java", "level": 60 },
-        { "name": "Laravel", "level": 70 }
+        { "name": "PHP", "url": "https://www.php.net/" },
+        { "name": "Node.js", "url": "https://nodejs.org/" },
+        { "name": "Python", "url": "https://www.python.org/doc/" },
+        { "name": "Java", "url": "https://docs.oracle.com/en/java/" },
+        { "name": "Laravel", "url": "https://laravel.com/docs" }
       ]
     },
     {
       "name": "Base de Datos",
       "skills": [
-        { "name": "MySQL", "level": 85 },
-        { "name": "SQL", "level": 80 }
+        { "name": "MySQL", "url": "https://dev.mysql.com/doc/" },
+        { "name": "SQL", "url": "https://www.w3schools.com/sql/" }
       ]
     },
     {
       "name": "Herramientas & DevOps",
       "skills": [
-        { "name": "Git", "level": 85 },
-        { "name": "Docker", "level": 70 },
-        { "name": "GitHub", "level": 90 }
+        { "name": "Git", "url": "https://git-scm.com/doc" },
+        { "name": "Docker", "url": "https://docs.docker.com/" },
+        { "name": "GitHub", "url": "https://docs.github.com/" }
       ]
     }
   ],

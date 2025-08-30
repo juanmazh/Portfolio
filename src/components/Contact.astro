@@ -92,7 +92,7 @@ const socialIcons = {
 			<div class="space-y-8">
 				<h3 class="text-2xl font-semibold text-gray-900 mb-6">Envíame un mensaje</h3>
 				
-				<form class="space-y-6" id="contactForm">
+				<form class="space-y-6" id="contactForm" action="https://formspree.io/f/mnnbpeeb" method="POST">
 					<div class="grid md:grid-cols-2 gap-6">
 						<div>
 							<label for="name" class="block text-sm font-medium text-gray-700 mb-2">Nombre</label>
@@ -155,35 +155,5 @@ const socialIcons = {
 </section>
 
 <script>
-	// Manejo del formulario de contacto
-	const contactForm = document.getElementById('contactForm') as HTMLFormElement;
-	
-	if (contactForm) {
-		contactForm.addEventListener('submit', async (e) => {
-			e.preventDefault();
-			
-			const formData = new FormData(contactForm);
-			const submitButton = contactForm.querySelector('button[type="submit"]') as HTMLButtonElement;
-			
-			// Cambiar estado del botón
-			submitButton.disabled = true;
-			submitButton.textContent = 'Enviando...';
-			
-			try {
-				// Simular envío (aquí iría la lógica real de envío)
-				await new Promise(resolve => setTimeout(resolve, 2000));
-				
-				// Mostrar mensaje de éxito
-				alert('¡Mensaje enviado con éxito! Te responderé pronto.');
-				contactForm.reset();
-				
-			} catch (error) {
-				alert('Error al enviar el mensaje. Por favor, inténtalo de nuevo.');
-			} finally {
-				// Restaurar estado del botón
-				submitButton.disabled = false;
-				submitButton.textContent = 'Enviar Mensaje';
-			}
-		});
-	}
+	// Eliminado el JS de envío simulado, ya que Formspree gestiona el envío.
 </script>
