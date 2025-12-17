@@ -5,8 +5,8 @@
       "company": "Cinde Soluciones S.L",
       "period": "Actualidad",
       "location": "Jaén, España",
-      "description": "Desarrollo de aplicaciones web utilizando tecnologías modernas. Trabajo en proyectos empresariales aplicando conocimientos en JavaScript, PHP, y frameworks frontend.",
-      "technologies": ["JavaScript", "PHP", "React", "Vue.js", "MySQL"]
+      "description": "Desarrollo de aplicaciones web utilizando tecnologías modernas. Trabajo en proyectos empresariales aplicando conocimientos en JavaScript, PHP entre otras.",
+      "technologies": ["JavaScript", "PHP", "MySQL"]
     }
   ],
   "education": [
@@ -23,14 +23,13 @@
       ]
     },
     {
-      "title": "Futuro Experto en Ciberseguridad",
-      "institution": "En proceso de formación",
+      "title": "Profesional en inteligencia artificial y Big Data",
+      "institution": "CIDEAD",
       "period": "2025 - En curso",
       "location": "España",
-      "description": "Formación especializada en ciberseguridad para complementar conocimientos en desarrollo web.",
+      "description": "Formación especializada en inteligencia artificial para complementar conocimientos en desarrollo web y aspirar a hacer una carrera universitaria.",
       "achievements": [
-        "En proceso de certificación",
-        "Complementando formación en desarrollo web"
+        "En proceso de certificación"
       ]
     }
   ]
