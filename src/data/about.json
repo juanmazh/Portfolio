@@ -1,23 +1,26 @@
 {
-  "title": "Sobre Mí",
-  "subtitle": "Conoce más sobre mi trayectoria y pasión por el desarrollo web",
-  "description": "Soy un desarrollador web apasionado por crear soluciones digitales que marquen la diferencia. Mi enfoque se centra en la experiencia del usuario y la calidad del código, siempre buscando las mejores prácticas y tecnologías emergentes. Actualmente trabajo en Cinde Soluciones S.L y estoy en camino de convertirme en Experto en Ciberseguridad.",
+  "title": "Sobre Mi",
+  "subtitle": "24 anos, desarrollador web con experiencia real y hambre de seguir aprendiendo",
+  "description": "Desarrollador web de 24 anos con Master de FP en IA y Big Data. Trabajo en Cinde Soluciones S.L desarrollando aplicaciones empresariales con JavaScript, PHP, React y Vue. Mi objetivo es siempre el mismo: entregar software bien construido, facil de mantener y que resuelva problemas reales.",
+  "secondDescription": "Lo que me mueve es el aprendizaje tecnico de verdad: desde diseniar una arquitectura solida hasta explorar vulnerabilidades en CTFs. Creo que un buen desarrollador no solo escribe codigo que funciona, sino codigo del que no se averguenza al revisarlo seis meses despues.",
   "personalInfo": [
-    { "label": "Nombre", "value": "Juan Manuel Zafra Hernández" },
-    { "label": "Ubicación", "value": "Jaén, España" },
+    { "label": "Nombre", "value": "Juan Manuel Zafra Hernandez" },
+    { "label": "Ubicacion", "value": "Jaen, Espana" },
     { "label": "Empresa", "value": "Cinde Soluciones S.L" },
-    { "label": "Formación", "value": "Técnico superior en DAW" },
-    { "label": "Especialización", "value": "Futuro Experto en Ciberseguridad" },
-    { "label": "Disponibilidad", "value": "Empleado en Cinde Soluciones S.L" }
+    { "label": "Formacion", "value": "Master FP en IA y Big Data" },
+    { "label": "Especializacion", "value": "Ciberseguridad & IA" },
+    { "label": "Disponibilidad", "value": "Empleado - Abierto a proyectos" }
   ],
   "interests": [
     "Desarrollo Web",
     "Ciberseguridad",
+    "CTFs",
     "JavaScript",
+    "TypeScript",
     "React",
     "Vue.js",
-    "PHP",
     "Python",
+    "IA & Big Data",
     "Docker"
   ]
 }

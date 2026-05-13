@@ -5,6 +5,11 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  # Rebuild semanal: sincroniza repos nuevos de GitHub automáticamente
+  schedule:
+    - cron: '0 6 * * 0'   # Cada domingo a las 6:00 UTC
+  # Trigger manual desde la pestaña Actions
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -30,21 +35,9 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          # Pasa el token para evitar rate limit de GitHub API (60 req/h sin token → 5000 con token)
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload build artifacts
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: act

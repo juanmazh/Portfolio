@@ -5,7 +5,7 @@ import contactData from '../data/contact.json';
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="bg-gray-900 text-white">
+<footer class="bg-gray-900 dark:bg-gray-950 text-white transition-colors duration-300">
 	<div class="container-custom py-12">
 		<div class="grid md:grid-cols-4 gap-8">
 			<!-- Información principal -->
@@ -144,9 +144,4 @@ const currentYear = new Date().getFullYear();
 			if (target) {
 				target.scrollIntoView({
 					behavior: 'smooth',
-					block: 'start'
-				});
-			}
-		});
-	});
-</script>
+					b

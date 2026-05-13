@@ -6,8 +6,11 @@
         { "name": "HTML5", "url": "https://developer.mozilla.org/docs/Web/HTML" },
         { "name": "CSS3", "url": "https://developer.mozilla.org/docs/Web/CSS" },
         { "name": "JavaScript", "url": "https://developer.mozilla.org/docs/Web/JavaScript" },
+        { "name": "TypeScript", "url": "https://www.typescriptlang.org/docs/" },
         { "name": "React", "url": "https://react.dev/" },
         { "name": "Vue.js", "url": "https://vuejs.org/" },
+        { "name": "Astro", "url": "https://docs.astro.build/" },
+        { "name": "Tailwind CSS", "url": "https://tailwindcss.com/docs" },
         { "name": "Bootstrap", "url": "https://getbootstrap.com/" }
       ]
     },
@@ -17,8 +20,8 @@
         { "name": "PHP", "url": "https://www.php.net/" },
         { "name": "Node.js", "url": "https://nodejs.org/" },
         { "name": "Python", "url": "https://www.python.org/doc/" },
-        { "name": "Java", "url": "https://docs.oracle.com/en/java/" },
-        { "name": "Laravel", "url": "https://laravel.com/docs" }
+        { "name": "Laravel", "url": "https://laravel.com/docs" },
+        { "name": "Java", "url": "https://docs.oracle.com/en/java/" }
       ]
     },
     {
@@ -29,30 +32,40 @@
       ]
     },
     {
-      "name": "Herramientas & DevOps",
+      "name": "Ciberseguridad",
+      "skills": [
+        { "name": "CTFs", "url": "https://ctftime.org/" },
+        { "name": "OWASP", "url": "https://owasp.org/" },
+        { "name": "Linux", "url": "https://www.linux.org/" },
+        { "name": "Kali Linux", "url": "https://www.kali.org/docs/" }
+      ]
+    },
+    {
+      "name": "Herramientas y DevOps",
       "skills": [
         { "name": "Git", "url": "https://git-scm.com/doc" },
+        { "name": "GitHub", "url": "https://docs.github.com/" },
         { "name": "Docker", "url": "https://docs.docker.com/" },
-        { "name": "GitHub", "url": "https://docs.github.com/" }
+        { "name": "GitHub Actions", "url": "https://docs.github.com/actions" }
       ]
     }
   ],
   "soft": [
     {
-      "name": "Trabajo en Equipo",
-      "description": "Experiencia colaborando en proyectos académicos y profesionales, demostrando capacidad de trabajo en equipo."
+      "name": "Orientacion a resultados",
+      "description": "Enfocado en entregar soluciones que funcionen de verdad, no solo en cumplir requisitos. Priorizo el impacto real sobre la perfeccion teorica."
     },
     {
-      "name": "Resolución de Problemas",
-      "description": "Habilidad para analizar problemas complejos y encontrar soluciones eficientes en desarrollo web."
+      "name": "Resolucion de Problemas",
+      "description": "Me enfrento a los problemas con metodo: entender antes de actuar, descomponer lo complejo y buscar la solucion mas limpia, no la mas rapida."
     },
     {
       "name": "Aprendizaje Continuo",
-      "description": "Comprometido con mantenerme actualizado en las últimas tecnologías, especialmente en ciberseguridad."
+      "description": "El sector no para y yo tampoco. De la IA al hacking, pasando por arquitectura de software, siempre hay algo nuevo que merece la pena entender bien."
     },
     {
-      "name": "Gestión de Proyectos",
-      "description": "Capacidad para manejar múltiples proyectos académicos y cumplir con los plazos establecidos."
+      "name": "Pensamiento critico",
+      "description": "Si algo puede hacerse mejor, lo digo. Prefiero una conversacion incomoda a entregar trabajo mediocre. Eso incluye cuestionar mis propias decisiones."
     }
   ]
 }

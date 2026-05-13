@@ -1,25 +1,107 @@
 ---
-import projects from '../data/projects.json';
+import curatedProjects from '../data/projects.json';
 
-const categories = ["Todos", "Frontend", "Backend", "Full Stack"];
+// ── GitHub sync en build time ──────────────────────────────────────────────
+// Cada vez que haces `npm run build` (o el deploy en GitHub Pages se dispara),
+// se piden los repos públicos de tu cuenta. Los repos que ya están en projects.json
+// usan sus datos curados (descripción, imagen, featured…); los nuevos aparecen
+// automáticamente con los datos de la API.
+
+interface GithubRepo {
+	name: string;
+	description: string | null;
+	html_url: string;
+	homepage: string | null;
+	topics: string[];
+	fork: boolean;
+	private: boolean;
+	stargazers_count: number;
+	updated_at: string;
+}
+
+let githubRepos: GithubRepo[] = [];
+
+try {
+	const headers: Record<string, string> = {
+		Accept: 'application/vnd.github.v3+json',
+	};
+	// Si defines GITHUB_TOKEN como secreto en GitHub Actions, se usa aquí
+	if (import.meta.env.GITHUB_TOKEN) {
+		headers['Authorization'] = `token ${import.meta.env.GITHUB_TOKEN}`;
+	}
+
+	const res = await fetch(
+		'https://api.github.com/users/juanmazh/repos?sort=updated&per_page=50&type=owner',
+		{ headers }
+	);
+
+	if (res.ok) {
+		githubRepos = await res.json();
+	}
+} catch (err) {
+	// En local sin conexión o si GitHub falla: usamos solo los curados
+	console.warn('[Projects] No se pudieron obtener repos de GitHub:', (err as Error).message);
+}
+
+// Filtrar: sin forks, sin repo-perfil, sin privados
+const filteredRepos = githubRepos.filter(
+	(r) => !r.fork && !r.private && r.name !== 'juanmazh'
+);
+
+function inferCategory(topics: string[]): string {
+	const fe = ['frontend', 'vue', 'react', 'html', 'css', 'javascript', 'typescript', 'astro', 'bootstrap'];
+	const be = ['backend', 'php', 'node', 'nodejs', 'api', 'server', 'python', 'java', 'laravel', 'mysql'];
+	const hasFE = topics.some((t) => fe.includes(t));
+	const hasBE = topics.some((t) => be.includes(t));
+	if (hasFE && hasBE) return 'Full Stack';
+	if (hasFE) return 'Frontend';
+	if (hasBE) return 'Backend';
+	return 'Full Stack';
+}
+
+function capitalize(s: string) {
+	return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+// URLs curadas para no duplicar
+const curatedUrls = new Set(
+	curatedProjects.map((p) => p.github?.toLowerCase().trim())
+);
+
+// Repos nuevos no curados → se añaden automáticamente
+const autoProjects = filteredRepos
+	.filter((r) => !curatedUrls.has(r.html_url.toLowerCase()))
+	.map((r) => ({
+		title: r.name.replace(/[-_]/g, ' '),
+		description: r.description || 'Repositorio disponible en GitHub.',
+		image: null as string | null,
+		technologies: r.topics?.length ? r.topics.map(capitalize) : [],
+		github: r.html_url,
+		demo: r.homepage || '#',
+		category: inferCategory(r.topics || []),
+		featured: false,
+	}));
+
+const allProjects = [...curatedProjects, ...autoProjects];
+const categories = ['Todos', 'Frontend', 'Backend', 'Full Stack'];
 ---
 
-<section id="proyectos" class="section-padding bg-gray-50">
+<section id="proyectos" class="section-padding bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
 	<div class="container-custom">
-		<div class="text-center mb-16">
-			<h2 class="text-4xl font-bold text-gray-900 mb-4">Mis Proyectos</h2>
-			<p class="text-xl text-gray-600 max-w-3xl mx-auto">
-				Aquí puedes ver algunos de los proyectos en los que he trabajado. Cada uno representa un desafío único y una oportunidad de aprendizaje.
+		<div class="text-center mb-16" data-animate>
+			<h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Mis Proyectos</h2>
+			<p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+				Proyectos personales, académicos y de trabajo. Cada uno representa un problema real resuelto o una tecnología aprendida.
 			</p>
 		</div>
 
 		<!-- Filtros -->
-		<div class="flex justify-center mb-12">
+		<div class="flex justify-center mb-12" data-animate>
 			<div class="flex flex-wrap gap-4">
 				{categories.map((category) => (
 					<button
-						class="filter-btn px-6 py-2 rounded-full border-2 border-gray-300 text-gray-700 hover:border-blue-600 hover:text-blue-600 transition-colors duration-200 font-medium"
-						data-category={category === "Todos" ? "all" : category.toLowerCase()}
+						class="filter-btn px-6 py-2 rounded-full border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:border-blue-600 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 font-medium"
+						data-category={category === 'Todos' ? 'all' : category.toLowerCase()}
 					>
 						{category}
 					</button>
@@ -29,95 +111,23 @@ const categories = ["Todos", "Frontend", "Backend", "Full Stack"];
 
 		<!-- Grid de proyectos -->
 		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-			{projects.map((project) => (
-				<div class="project-card card p-6 group" data-category={project.category.toLowerCase()}>
-					<!-- Imagen del proyecto -->
+			{allProjects.map((project, i) => (
+				<div
+					class="project-card card p-6 group"
+					data-category={project.category.toLowerCase()}
+					data-animate
+					data-delay={Math.min(i, 5) * 80}
+				>
+					<!-- Imagen / placeholder -->
 					<div class="relative mb-6 overflow-hidden rounded-lg">
 						<div class="w-full h-48 bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center">
-							<svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
-								<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+							<svg class="w-16 h-16 text-white opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
 							</svg>
 						</div>
 						<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
 							<div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex space-x-4">
-								<a href={project.github} target="_blank" rel="noopener noreferrer" 
+								<a href={project.github} target="_blank" rel="noopener noreferrer"
 								   class="bg-white text-gray-900 p-3 rounded-full hover:bg-gray-100 transition-colors duration-200">
 									<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-										<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-									</svg>
-								</a>
-								{project.demo !== "#" && (
-									<a href={project.demo} target="_blank" rel="noopener noreferrer" 
-									   class="bg-white text-gray-900 p-3 rounded-full hover:bg-gray-100 transition-colors duration-200">
-										<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-										</svg>
-									</a>
-								)}
-							</div>
-						</div>
-					</div>
-
-					<!-- Contenido del proyecto -->
-					<div class="space-y-4">
-						<div>
-							<h3 class="text-xl font-semibold text-gray-900 mb-2">{project.title}</h3>
-							<p class="text-gray-600 leading-relaxed">{project.description}</p>
-						</div>
-
-						<!-- Tecnologías -->
-						<div class="flex flex-wrap gap-2">
-							{project.technologies.map((tech) => (
-								<span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full font-medium">
-									{tech}
-								</span>
-							))}
-						</div>
-
-						<!-- Categoría -->
-						<div class="flex justify-between items-center">
-							<span class="text-sm text-gray-500 font-medium">{project.category}</span>
-							{project.featured && (
-								<span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full font-medium">
-									Destacado
-								</span>
-							)}
-						</div>
-					</div>
-				</div>
-			))}
-		</div>
-	</div>
-</section>
-
-<script>
-	// Filtrado de proyectos
-	const filterButtons = document.querySelectorAll('.filter-btn') as NodeListOf<HTMLElement>;
-	const projectCards = document.querySelectorAll('.project-card') as NodeListOf<HTMLElement>;
-
-	filterButtons.forEach(button => {
-		button.addEventListener('click', () => {
-			const category = button.getAttribute('data-category');
-			
-			// Actualizar botones activos
-			filterButtons.forEach(btn => {
-				btn.classList.remove('border-blue-600', 'text-blue-600');
-				btn.classList.add('border-gray-300', 'text-gray-700');
-			});
-			button.classList.remove('border-gray-300', 'text-gray-700');
-			button.classList.add('border-blue-600', 'text-blue-600');
-			
-			// Filtrar proyectos
-			projectCards.forEach(card => {
-				const cardCategory = card.getAttribute('data-category');
-				if (category === 'all' || cardCategory === category) {
-					(card as HTMLElement).style.display = 'block';
-					card.classList.add('animate-fade-in-up');
-				} else {
-					(card as HTMLElement).style.display = 'none';
-					card.classList.remove('animate-fade-in-up');
-				}
-			});
-		});
-	});
-</script>
+										<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0
