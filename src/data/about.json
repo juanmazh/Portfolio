@@ -1,7 +1,7 @@
 {
   "title": "Sobre Mi",
-  "subtitle": "24 anos, desarrollador web con experiencia real y hambre de seguir aprendiendo",
-  "description": "Desarrollador web de 24 anos con Master de FP en IA y Big Data. Trabajo en Cinde Soluciones S.L desarrollando aplicaciones empresariales con JavaScript, PHP, React y Vue. Mi objetivo es siempre el mismo: entregar software bien construido, facil de mantener y que resuelva problemas reales.",
+  "subtitle": "24 años, desarrollador web con experiencia real y hambre de seguir aprendiendo",
+  "description": "Desarrollador web de 24 años con Master de FP en IA y Big Data. Trabajo en Cinde Soluciones S.L desarrollando aplicaciones empresariales con JavaScript, PHP. Mi objetivo es siempre el mismo: entregar software bien construido, facil de mantener y que resuelva problemas reales.",
   "secondDescription": "Lo que me mueve es el aprendizaje tecnico de verdad: desde diseniar una arquitectura solida hasta explorar vulnerabilidades en CTFs. Creo que un buen desarrollador no solo escribe codigo que funciona, sino codigo del que no se averguenza al revisarlo seis meses despues.",
   "personalInfo": [
     { "label": "Nombre", "value": "Juan Manuel Zafra Hernandez" },
