@@ -4,9 +4,9 @@
       "title": "Desarrollador de Aplicaciones Web",
       "company": "Cinde Soluciones S.L",
       "period": "2025 - Actualidad",
-      "location": "Jaen, Espana",
+      "location": "Jaen, España",
       "description": "Desarrollo de aplicaciones web en entorno empresarial real. Trabajo en proyectos de cliente con JavaScript, PHP y frameworks frontend, con foco en codigo mantenible y buenas practicas.",
-      "technologies": ["JavaScript", "PHP", "React", "Vue.js", "MySQL", "Git"]
+      "technologies": ["JavaScript", "PHP", "MySQL", "Git"]
     }
   ],
   "education": [
@@ -14,19 +14,18 @@
       "title": "Tecnico Superior en Desarrollo de Aplicaciones Web",
       "institution": "Centro de Formacion Profesional",
       "period": "2023 - 2025",
-      "location": "Jaen, Espana",
+      "location": "Jaen, España",
       "description": "Formacion completa en desarrollo web: cliente, servidor, interfaces, bases de datos y despliegue.",
       "achievements": [
         "Proyecto fin de grado: AmigosJaen - red social para promocionar la provincia de Jaen",
-        "Dominio de tecnologias frontend (JavaScript, Vue.js) y backend (PHP, MySQL)",
-        "Matricula de honor en modulos de cliente y bases de datos"
+        "Dominio de tecnologias frontend (JavaScript, Vue.js) y backend (PHP, MySQL)"
       ]
     },
     {
       "title": "Master FP en Inteligencia Artificial y Big Data",
       "institution": "Centro de Formacion Profesional",
       "period": "2025 - En curso",
-      "location": "Espana",
+      "location": "España",
       "description": "Formacion especializada en IA, machine learning, analisis de datos masivos y aplicacion practica en entornos productivos.",
       "achievements": [
         "Fundamentos de machine learning y deep learning",
@@ -38,10 +37,10 @@
       "title": "Ingenieria Informatica",
       "institution": "Universidad de Jaen (UJA)",
       "period": "Proximamente",
-      "location": "Jaen, Espana",
+      "location": "Jaen, España",
       "description": "Formacion universitaria en ingenieria informatica para ampliar y consolidar conocimientos en desarrollo de software, sistemas y tecnologias emergentes.",
       "achievements": [
-        "Acceso directo desde Master FP"
+        "De momento no he comenzado, pero espero aplicar todo lo aprendido en mis estudios anteriores y seguir creciendo como desarrollador"
       ]
     }
   ]
