@@ -21,4 +21,46 @@ const { title, description = "Portfolio profesional de Juan Manuel Zafra Hernán
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 		<!-- Anti-flash: aplica dark antes de que el navegador pinte -->
-		<script is:inline>
+		<script is:inline>
+			(function () {
+				const stored = localStorage.getItem('theme');
+				const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+				if (stored === 'dark' || (!stored && prefersDark)) {
+					document.documentElement.classList.add('dark');
+				}
+			})();
+		</script>
+	</head>
+	<body class="font-['Inter']">
+		<slot />
+
+		<!-- Intersection Observer: scroll animations -->
+		<script is:inline>
+			(function () {
+				const selectors = ['[data-animate]', '[data-animate-fade]', '[data-animate-left]', '[data-animate-right]'];
+				const all = document.querySelectorAll(selectors.join(','));
+				if (!all.length) return;
+
+				const observer = new IntersectionObserver(
+					function(entries) {
+						entries.forEach(function(entry) {
+							if (entry.isIntersecting) {
+								const el = entry.target;
+								const delay = Number(el.getAttribute('data-delay') || 0);
+								setTimeout(function() { el.classList.add('is-visible'); }, delay);
+								observer.unobserve(el);
+							}
+						});
+					},
+					{ threshold: 0.12 }
+				);
+
+				all.forEach(function(el) { observer.observe(el); });
+			})();
+		</script>
+	</body>
+</html>
+
+<style is:global>
+	@import '../styles/global.css';
+</style>

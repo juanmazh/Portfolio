@@ -59,7 +59,7 @@ El portfolio se despliega automáticamente en GitHub Pages cada vez que se hace 
 
 ## 📧 Contacto
 
-- **Email:** juanmanuel.zafra@gmail.com
+- **Email:** juanmazh.dev@gmail.com
 - **LinkedIn:** [Juan Manuel Zafra Hernández](https://www.linkedin.com/in/juan-manuel-zafra-hernández-8b8b8b8b8/)
 - **GitHub:** [@juanmazh](https://github.com/juanmazh)
 

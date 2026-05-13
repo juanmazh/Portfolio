@@ -3,10 +3,10 @@
     {
       "title": "Desarrollador de Aplicaciones Web",
       "company": "Cinde Soluciones S.L",
-      "period": "2025 - Actualidad",
-      "location": "Jaen, Espana",
-      "description": "Desarrollo de aplicaciones web en entorno empresarial real. Trabajo en proyectos de cliente con JavaScript, PHP y frameworks frontend, con foco en codigo mantenible y buenas practicas.",
-      "technologies": ["JavaScript", "PHP", "React", "Vue.js", "MySQL", "Git"]
+      "period": "Actualidad",
+      "location": "Jaén, España",
+      "description": "Desarrollo de aplicaciones web utilizando tecnologías modernas. Trabajo en proyectos empresariales aplicando conocimientos en JavaScript, PHP entre otras.",
+      "technologies": ["JavaScript", "PHP", "MySQL"]
     }
   ],
   "education": [
@@ -23,15 +23,13 @@
       ]
     },
     {
-      "title": "Tecnico Superior en Desarrollo de Aplicaciones Web",
-      "institution": "Centro de Formacion Profesional",
-      "period": "2023 - 2025",
-      "location": "Jaen, Espana",
-      "description": "Formacion completa en desarrollo web: cliente, servidor, interfaces, bases de datos y despliegue.",
+      "title": "Profesional en inteligencia artificial y Big Data",
+      "institution": "CIDEAD",
+      "period": "2025 - En curso",
+      "location": "España",
+      "description": "Formación especializada en inteligencia artificial para complementar conocimientos en desarrollo web y aspirar a hacer una carrera universitaria.",
       "achievements": [
-        "Proyecto fin de grado: AmigosJaen - red social para promocionar la provincia de Jaen",
-        "Dominio de tecnologias frontend (JavaScript, Vue.js) y backend (PHP, MySQL)",
-        "Matricula de honor en modulos de cliente y bases de datos"
+        "En proceso de certificación"
       ]
     }
   ]

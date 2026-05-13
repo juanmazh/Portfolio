@@ -41,4 +41,13 @@ import skillsData from '../data/skills.json';
 
 				<div class="grid gap-6">
 					{skillsData.soft.map((skill, i) => (
-						<div class="card p-6 hover:shadow-lg transition-shadow
+						<div class="card p-6 hover:shadow-lg transition-shadow duration-300" data-animate data-delay={i * 100}>
+							<h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">{skill.name}</h4>
+							<p class="text-gray-600 dark:text-gray-400 leading-relaxed">{skill.description}</p>
+						</div>
+					))}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
