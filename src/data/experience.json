@@ -1,46 +1,36 @@
 {
   "work": [
     {
-      "title": "Desarrollador de Aplicaciones Web",
-      "company": "Cinde Soluciones S.L",
-      "period": "2025 - Actualidad",
-      "location": "Jaen, España",
-      "description": "Desarrollo de aplicaciones web en entorno empresarial real. Trabajo en proyectos de cliente con JavaScript, PHP y frameworks frontend, con foco en codigo mantenible y buenas practicas.",
-      "technologies": ["JavaScript", "PHP", "MySQL", "Git"]
+      "title": "Desarrollador Full Stack",
+      "company": "Cinde Soluciones S.L.",
+      "period": "Feb 2025 - Actualidad",
+      "location": "Jaén, España",
+      "description": "Prácticas FCT (feb–jun 2025) y contrato desde jul 2025. Desarrollo de software de gestión empresarial en una consultora TIC: SIGO Control (ERP de gestión y control de costes), SIGO Canal de Denuncias e iTempo (control horario web y móvil). Integración de facturación electrónica con Veri*factu y adaptación al SII, chatbots con IA para los productos de la empresa e impulso y diseño de una plataforma SaaS multi-tenant de herramientas de IA.",
+      "technologies": ["PHP", "JavaScript", "jQuery", "MySQL", "Cordova", "API de Claude", "WordPress"]
     }
   ],
   "education": [
     {
-      "title": "Tecnico Superior en Desarrollo de Aplicaciones Web",
-      "institution": "Centro de Formacion Profesional",
-      "period": "2023 - 2025",
-      "location": "Jaen, España",
-      "description": "Formacion completa en desarrollo web: cliente, servidor, interfaces, bases de datos y despliegue.",
-      "achievements": [
-        "Proyecto fin de grado: AmigosJaen - red social para promocionar la provincia de Jaen",
-        "Dominio de tecnologias frontend (JavaScript, Vue.js) y backend (PHP, MySQL)"
-      ]
-    },
-    {
-      "title": "Master FP en Inteligencia Artificial y Big Data",
-      "institution": "Centro de Formacion Profesional",
-      "period": "2025 - En curso",
+      "title": "Curso de Especialización de FP en Inteligencia Artificial y Big Data",
+      "institution": "CIDEAD",
+      "period": "2025/2026",
       "location": "España",
-      "description": "Formacion especializada en IA, machine learning, analisis de datos masivos y aplicacion practica en entornos productivos.",
+      "description": "Formación especializada en inteligencia artificial, machine learning y análisis de datos masivos, con aplicación práctica en entornos productivos.",
       "achievements": [
         "Fundamentos de machine learning y deep learning",
-        "Procesamiento y analisis de grandes volumenes de datos",
-        "Integracion de IA en sistemas web y aplicaciones reales"
+        "Procesamiento y análisis de grandes volúmenes de datos",
+        "Integración de IA en sistemas web y aplicaciones reales"
       ]
     },
     {
-      "title": "Ingenieria Informatica",
-      "institution": "Universidad de Jaen (UJA)",
-      "period": "Proximamente",
-      "location": "Jaen, España",
-      "description": "Formacion universitaria en ingenieria informatica para ampliar y consolidar conocimientos en desarrollo de software, sistemas y tecnologias emergentes.",
+      "title": "CFGS Desarrollo de Aplicaciones Web (DAW)",
+      "institution": "IES Virgen del Carmen",
+      "period": "2023 - 2025",
+      "location": "Jaén, España",
+      "description": "Formación completa en desarrollo web: cliente, servidor, interfaces, bases de datos y despliegue.",
       "achievements": [
-        "De momento no he comenzado, pero espero aplicar todo lo aprendido en mis estudios anteriores y seguir creciendo como desarrollador"
+        "Proyecto fin de grado: AmigosJaén, red social para organizar actividades en Jaén",
+        "Beca del centro para formación en OpenWebinars: más de 10 certificaciones obtenidas"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
-  "name": "Juan Manuel Zafra Hernandez",
-  "title": "Desarrollador Web Full Stack",
-  "subtitle": "Frontend y backend - Ciberseguridad e IA",
-  "description": "Desarrollador web con experiencia real en entorno empresarial. Trabajo en Cinde Soluciones S.L con JavaScript, PHP. Master FP en IA y Big Data. Apasionado por la ciberseguridad y el aprendizaje continuo.",
+  "name": "Juan Manuel Zafra Hernández",
+  "title": "Desarrollador Full Stack e IA",
+  "subtitle": "Software de gestión empresarial · Integración de IA en productos reales",
+  "description": "Desarrollador full stack con más de año y medio de experiencia en software de gestión empresarial con PHP, JavaScript y MySQL, incluyendo facturación electrónica (Veri*factu, SII). Especializado en Inteligencia Artificial y Big Data, con experiencia práctica integrando LLMs en productos reales.",
   "ctaText": "Ver Proyectos",
   "ctaLink": "#proyectos",
   "secondaryCtaText": "Descargar CV",
-  "secondaryCtaLink": "./Juan Manuel Zafra Hernandez.pdf",
+  "secondaryCtaLink": "./cv-juan-manuel-zafra.pdf",
   "socialLinks": {
     "github": "https://github.com/juanmazh",
     "linkedin": "https://www.linkedin.com/in/juan-manuel-zafra-hern%C3%A1ndez-5b2bb7339/",

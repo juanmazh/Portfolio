@@ -1,26 +1,26 @@
 {
-  "title": "Sobre Mi",
-  "subtitle": "24 años, desarrollador web con experiencia real y hambre de seguir aprendiendo",
-  "description": "Desarrollador web de 24 años con Master de FP en IA y Big Data. Trabajo en Cinde Soluciones S.L desarrollando aplicaciones empresariales con JavaScript, PHP. Mi objetivo es siempre el mismo: entregar software bien construido, facil de mantener y que resuelva problemas reales.",
-  "secondDescription": "Lo que me mueve es el aprendizaje tecnico de verdad: desde diseniar una arquitectura solida hasta explorar vulnerabilidades en CTFs. Creo que un buen desarrollador no solo escribe codigo que funciona, sino codigo del que no se averguenza al revisarlo seis meses despues.",
+  "title": "Sobre mí",
+  "subtitle": "Desarrollador full stack con experiencia real en software empresarial e IA aplicada",
+  "description": "Trabajo en Cinde Soluciones S.L. desarrollando software de gestión empresarial: ERP con PHP y MySQL, facturación electrónica con Veri*factu y SII, y aplicaciones web y móviles para empresas. También integro IA en productos reales, como chatbots con base de conocimiento y una plataforma SaaS multi-tenant de herramientas de IA.",
+  "secondDescription": "Me estoy especializando en Inteligencia Artificial y Big Data. Lo que me mueve es entender bien lo que construyo: desde el diseño de una arquitectura sólida hasta el detalle de un bug difícil. Creo que un buen desarrollador no solo escribe código que funciona, sino código del que no se avergüenza al revisarlo seis meses después.",
   "personalInfo": [
-    { "label": "Nombre", "value": "Juan Manuel Zafra Hernandez" },
-    { "label": "Ubicacion", "value": "Jaen, Espana" },
-    { "label": "Empresa", "value": "Cinde Soluciones S.L" },
-    { "label": "Formacion", "value": "Master FP en IA y Big Data" },
-    { "label": "Especializacion", "value": "Ciberseguridad & IA" },
-    { "label": "Disponibilidad", "value": "Empleado - Abierto a proyectos" }
+    { "label": "Nombre", "value": "Juan Manuel Zafra Hernández" },
+    { "label": "Ubicación", "value": "Jaén, España" },
+    { "label": "Empresa", "value": "Cinde Soluciones S.L." },
+    { "label": "Formación", "value": "CFGS DAW · Especialización en IA y Big Data" },
+    { "label": "Especialización", "value": "Desarrollo full stack e IA" },
+    { "label": "Disponibilidad", "value": "Presencial en Jaén, remoto o reubicación" }
   ],
   "interests": [
-    "Desarrollo Web",
-    "Ciberseguridad",
-    "CTFs",
+    "Desarrollo web",
+    "Inteligencia Artificial",
+    "Agentes de IA",
+    "Arquitectura de software",
+    "APIs REST",
     "JavaScript",
     "TypeScript",
-    "React",
     "Vue.js",
-    "Python",
-    "IA & Big Data",
-    "Docker"
+    "React",
+    "Python"
   ]
 }

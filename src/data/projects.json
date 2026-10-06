@@ -1,35 +1,45 @@
 [
   {
     "title": "AmigosJaén",
-    "description": "Mi primer proyecto 'profesional' - proyecto fin de grado superior en desarrollo de aplicaciones web. Una red social para promocionar la actividad de la provincia de Jaén, con numerosas funcionalidades.",
+    "description": "Red social para organizar actividades en Jaén: eventos con mapa, foros, chat en tiempo real y panel de administración. Proyecto final de DAW.",
     "image": "/project-amigosjaen.jpg",
-    "technologies": ["JavaScript", "HTML5", "CSS3"],
+    "technologies": ["React", "Node.js", "Express", "MySQL", "Socket.io", "JWT"],
     "github": "https://github.com/juanmazh/amigosjaen",
+    "demo": "https://amigosjaen.netlify.app",
+    "category": "Full Stack",
+    "featured": true
+  },
+  {
+    "title": "Todo App",
+    "description": "Gestor de tareas con autenticación, filtros, estadísticas y datos aislados por usuario mediante Row Level Security.",
+    "image": "/project-todo-app.jpg",
+    "technologies": ["React 19", "TypeScript", "Supabase", "PostgreSQL", "Vite"],
+    "github": "https://github.com/juanmazh/todo-app",
     "demo": "#",
     "category": "Full Stack",
     "featured": true
   },
   {
-    "title": "ApatitaTours",
-    "description": "Proyecto del módulo Cliente - página web para gestionar y contratar tours turísticos con funcionalidades de reserva y consulta.",
-    "image": "/project-apatitatours.jpg",
-    "technologies": ["Vue.js", "JavaScript", "CSS3"],
-    "github": "https://github.com/juanmazh/ApatitaTours",
+    "title": "Portfolio",
+    "description": "Esta web: portfolio personal que sincroniza mis repos de GitHub en cada despliegue automático a GitHub Pages.",
+    "image": "/project-portfolio.jpg",
+    "technologies": ["Astro", "TypeScript", "Tailwind CSS", "GitHub Actions"],
+    "github": "https://github.com/juanmazh/Portfolio",
     "demo": "#",
     "category": "Frontend"
   },
   {
-    "title": "Books-CRUD",
-    "description": "Sistema CRUD completo para gestión de libros con funcionalidad adicional de generación de PDF.",
-    "image": "/project-books-crud.jpg",
-    "technologies": ["PHP", "MySQL", "HTML5", "CSS3"],
-    "github": "https://github.com/juanmazh/Books-CRUD",
+    "title": "ApatitaTours",
+    "description": "Web para consultar y contratar tours turísticos, con API REST propia en PHP.",
+    "image": "/project-apatitatours.jpg",
+    "technologies": ["Vue 3", "Vite", "PHP"],
+    "github": "https://github.com/juanmazh/ApatitaTours",
     "demo": "#",
-    "category": "Backend"
+    "category": "Full Stack"
   },
   {
     "title": "Sistema Gestor de Inventarios",
-    "description": "Sistema completo de gestión de inventarios desarrollado con PHP, MySQL y Bootstrap para una interfaz moderna y responsive.",
+    "description": "Sistema de gestión de inventarios con interfaz responsive.",
     "image": "/project-inventarios.jpg",
     "technologies": ["PHP", "MySQL", "Bootstrap", "JavaScript"],
     "github": "https://github.com/juanmazh/SistemaGestorDeInventarios",
@@ -37,8 +47,17 @@
     "category": "Full Stack"
   },
   {
+    "title": "Books-CRUD",
+    "description": "CRUD de gestión de libros con exportación a PDF.",
+    "image": "/project-books-crud.jpg",
+    "technologies": ["PHP", "MySQL"],
+    "github": "https://github.com/juanmazh/Books-CRUD",
+    "demo": "#",
+    "category": "Backend"
+  },
+  {
     "title": "RPS Game",
-    "description": "Juego de piedra, papel o tijeras desarrollado para el módulo de servidor, demostrando conocimientos en PHP.",
+    "description": "Juego de piedra, papel o tijera para el módulo de servidor de DAW.",
     "image": "/project-rps.jpg",
     "technologies": ["PHP", "HTML5", "CSS3"],
     "github": "https://github.com/juanmazh/RPS_JuanManuel_Daw",
@@ -47,7 +66,7 @@
   },
   {
     "title": "Proyecto Cliente Interfaces",
-    "description": "Proyecto del módulo de interfaces de cliente, desarrollado con JavaScript y tecnologías frontend.",
+    "description": "Proyecto del módulo de diseño de interfaces de DAW.",
     "image": "/project-interfaces.jpg",
     "technologies": ["JavaScript", "HTML5", "CSS3"],
     "github": "https://github.com/juanmazh/ProyectoClienteInterfaces",
